@@ -1,0 +1,25 @@
+#ifndef QUEUE_H
+#define QUEUE_H
+#include <Node.h>
+#include <Shape.h>
+
+class Queue {
+public:
+    void InsertToBack(Shape* data);
+    Shape* RemoveFromFront();
+    //constructor
+    Queue();
+
+protected:
+    Node *head;
+    Node *tail;
+
+private:
+
+
+
+
+};
+
+
+#endif
