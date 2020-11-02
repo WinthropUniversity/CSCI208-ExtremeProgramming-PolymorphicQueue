@@ -17,12 +17,12 @@ double Circle::GetRadius() {
   return radius_;
 }
 
-double Circle::GetArea() {
+double Circle::GetArea() const {
 
   return radius_ * radius_ * PI; 
 }
 
-double Circle::GetPerimeter() {
+double Circle::GetPerimeter() const {
 
   return 2 * PI * radius_;
 }
