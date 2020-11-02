@@ -5,10 +5,15 @@
 using namespace std;
 
 // This code snippet was written by Jasmen & Matthew (11/2/2020)
+// To-Do: Begin implementing body code for Shape.cc! 
+//
+// 
 
 class Shape {
 
     public:
+  
+    Shape();
     string GetColor(string);
 
     virtual double GetArea() = 0;
@@ -19,7 +24,6 @@ class Shape {
     string color;
     
 } 
-
 
 
 
