@@ -9,9 +9,9 @@ class Circle : public Shape {
   public:
 	Circle(double radius);
 	GetRadius();
-	SetRadius(double radius);
-	GetArea();
-	GetPerimeter();
+	//SetRadius(double radius);
+	GetArea() const;
+	GetPerimeter() const;
 
   protected:
 	radius_;
