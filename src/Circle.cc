@@ -2,9 +2,8 @@
 #include <Circle.h>
 
 
-using namespace std;
 
-void Circle::Circle(double radius){
+Circle::Circle(double radius){
 
   radius_ = radius;
 }
@@ -24,5 +23,5 @@ double Circle::GetArea() const {
 
 double Circle::GetPerimeter() const {
 
-  return 2 * PI * radius_;
+  return 2.0 * PI * radius_;
 }
