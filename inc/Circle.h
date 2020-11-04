@@ -10,8 +10,8 @@ class Circle : public Shape {
 	Circle(double radius);
 	double GetRadius();
 	//double SetRadius(double radius);
-	double GetArea() const;
-	double GetPerimeter() const;
+	double GetArea();
+	double GetPerimeter();
 
   protected:
 	double radius_;
