@@ -6,34 +6,34 @@ using namespace std;
 
 class Shape {
 
-    public:
+public:
 
-    // Default constructor
+  // Default constructor
 
-    Shape() {
-	color = "gray";
-    }
+  Shape() {
+    color = "gray";
+  }
 
-    // Gets color
- 
-    string GetColor() {
-	return color;
-    }
+  // Gets color
 
-    // SetColor will set color of shape
+  string GetColor() {
+    return color;
+  }
 
-     string SetColor(string in_color) {
-	color = in_color;
-    } 
+  // SetColor will set color of shape
 
-    // To be inherited into other classes
+  string SetColor(string in_color) {
+    color = in_color;
+  }
 
-    virtual double GetArea() = 0;
-    virtual double GetPerimeter() = 0;
+  // To be inherited into other classes
 
-    protected:
+  virtual double GetArea() = 0;
+  virtual double GetPerimeter() = 0;
 
-    string color;
+protected:
+
+  string color;
 };
 
 
