@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <Circle.h>
+#define PI 3.141592653589
 
 
 //Constructor
@@ -27,6 +28,10 @@ void Circle::AskUserForShapeParameters() {
 
 void Circle::SetRadius(double radius) {
   radius_ = radius;
+
+  if (radius_ < 0) {
+	radius_ = radius * -1;
+  }
 }
 
 double Circle::GetRadius() {
@@ -43,7 +48,7 @@ double Circle::GetPerimeter() {
 
 void PrintShapeInfo() {
   cout << "  Shape: Circle" << endl;
-  cout << "  Color " << this-> GetColor() << endl;
+  cout << "  Color " << this->GetColor() << endl;
   cout << "  Radius: " << this->GetRadius() << endl;
   cout << "  Area: " << this->GetArea() << endl;
   cout << "  Perimeter: " << this->GetPerimeter() << endl;
