@@ -26,8 +26,16 @@ bool Queue::IsEmpty(){
 }
 
 void Queue::InsertToBack(Shape* data){
-  Node* new_node = new Node;
-  new_node = data;
+
+  Node* new_node = new Node(data);
+
+  if(head==NULL){
+    head = new_node;
+  }
+
+  if(tail != NULL){
+    tail->SetNext(new_node);
+  }
 
   tail = new_node;
 }
@@ -38,6 +46,8 @@ Queue::RemoveFromFront(){
   {
     return NULL;
   }
+
+  if(Node *head == )
 
   Node* temp = head;
   head = head->NextPtr();
