@@ -1,5 +1,5 @@
-#ifndef RIGHTTRIANGLE_H_
-#define RIGHTTRIANGLE_H_
+#ifndef RECTANGLE_H_
+#define RECTANGLE_H_
 
 #include<iostream>
 #include<Shape.h> 
