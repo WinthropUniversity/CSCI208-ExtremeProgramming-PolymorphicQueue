@@ -14,11 +14,6 @@ protected:
     Node *head;
     Node *tail;
 
-private:
-
-
-
-
 };
 
 
