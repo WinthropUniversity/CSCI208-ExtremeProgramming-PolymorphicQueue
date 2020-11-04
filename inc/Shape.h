@@ -30,6 +30,9 @@ public:
 
   virtual double GetArea() = 0;
   virtual double GetPerimeter() = 0;
+  virtual void AskUserForShapeParameters() = 0;
+  virtual void PrintShapeInfo() = 0;
+
 
 protected:
 

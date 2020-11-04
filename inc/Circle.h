@@ -7,11 +7,16 @@
 class Circle : public Shape {
 
   public:
-	Circle(double radius);
+	Circle();
+
 	double GetRadius();
-	//double SetRadius(double radius);
+	double SetRadius(double radius);
+
 	double GetArea();
 	double GetPerimeter();
+
+  void PrintShapeInfo();
+  void AskUserForShapeParameters();
 
   protected:
 	double radius_;

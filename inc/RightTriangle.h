@@ -12,12 +12,17 @@ class RightTriangle : public Shape {
 public:
   double GetBase();
   double SetBase(double inBase);
+
   double GetHeight();
   double SetHeight(double inHeight);
+
   double GetArea();
   double GetPerimeter();
 
-  RightTriangle(double inBase, double inHeight);
+  void PrintShapeInfo();
+  void AskUserForShapeParameters();
+
+  RightTriangle();
 
 protected:
   double base; //Base gotten from user

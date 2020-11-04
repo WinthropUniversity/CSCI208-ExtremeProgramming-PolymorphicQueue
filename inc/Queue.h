@@ -7,6 +7,8 @@ class Queue {
 public:
     void InsertToBack(Shape* data);
     Shape* RemoveFromFront();
+    bool IsEmpty();
+
     //constructor
     Queue();
 
