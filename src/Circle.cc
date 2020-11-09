@@ -30,7 +30,7 @@ void Circle::SetRadius(double radius) {
   radius_ = radius;
 
   if (radius_ < 0) {
-	radius_ = radius * -1.0;
+	radius_ = radius_ * -1.0;
   }
 }
 
