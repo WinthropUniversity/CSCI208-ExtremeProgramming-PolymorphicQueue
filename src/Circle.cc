@@ -34,23 +34,26 @@ void Circle::SetRadius(double radius) {
   }
 }
 
+
 double Circle::GetRadius() {
   return radius_;
 }
+
 
 double Circle::GetArea() {
   return radius_ * radius_ * PI;
 }
 
+
 double Circle::GetPerimeter() {
   return 2.0 * PI * radius_;
 }
 
-void PrintShapeInfo() {
+
+void Circle::PrintShapeInfo() {
   cout << "  Shape: Circle" << endl;
   cout << "  Color " << this->GetColor() << endl;
   cout << "  Radius: " << this->GetRadius() << endl;
   cout << "  Area: " << this->GetArea() << endl;
   cout << "  Perimeter: " << this->GetPerimeter() << endl;
-
 }

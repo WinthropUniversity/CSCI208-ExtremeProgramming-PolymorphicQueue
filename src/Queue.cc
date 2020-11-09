@@ -5,9 +5,8 @@ Queue::Queue(){
   // set the head and tail to NULL
   head = NULL;
   tail = NULL;
-
-
 }
+
 
 bool Queue::IsEmpty(){
 
@@ -25,8 +24,8 @@ bool Queue::IsEmpty(){
   return empty;
 }
 
-void Queue::InsertToBack(Shape* data){
 
+void Queue::InsertToBack(Shape* data){
   Node* new_node = new Node(data);
 
   if(head==NULL){
@@ -40,19 +39,21 @@ void Queue::InsertToBack(Shape* data){
   tail = new_node;
 }
 
-Queue::RemoveFromFront(){
 
-  if(head==NULL)
+Shape *Queue::RemoveFromFront() {
+  Shape *returnShapePtr = NULL;
+  Node *currentHeadPtr = NULL;
+
+  if (head != NULL) 
   {
-    return NULL;
+    if (head == tail) tail = NULL;
+    currentHeadPtr = head;
+
+    returnShapePtr = head->GetShape();
+    head = head->GetNext();
+
+    delete currentHeadPtr;
   }
 
-  if(Node *head == )
-
-  Node* temp = head;
-  head = head->NextPtr();
-
-  delete temp;
-  return head;
-
+  return returnShapePtr;
 }

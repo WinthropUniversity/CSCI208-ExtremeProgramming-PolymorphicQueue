@@ -3,9 +3,10 @@
 
 #include<Circle.h>
 #include<RightTriangle.h>
+//#include<Rectangle.h>
 #include<Queue.h>
 
-using namesace std;
+using namespace std;
 
 
 Shape *AskUserForShape() {
@@ -13,7 +14,7 @@ Shape *AskUserForShape() {
 
   // Ask user which shape to make
   int whichShape = 0;
-  cout << "What shape do you want? (1-Circle, 2-RightTriangle, 3-Rectangle) :"
+  cout << "What shape do you want? (1-Circle, 2-RightTriangle, 3-Rectangle) :";
   cin >> whichShape;
 
   // Create the correct shape
@@ -23,21 +24,21 @@ Shape *AskUserForShape() {
   else if (whichShape == 2)
     myShape = new RightTriangle();
 
-  else if (whichShape == 3)
-      myShape = new Rectange();
+  //else if (whichShape == 3)
+  //  myShape = new Rectange();
 
   // Read the shape info from
-  if (myshape != NULL)
+  if (myShape != NULL)
     myShape->AskUserForShapeParameters();
 
-  returm myShape;
+  return myShape;
 }
 
 
 
 int main() {
   Queue myshapequeue;
-  bool done = False;
+  bool done = false;
 
   while (!done) {
     Shape *shape = AskUserForShape();
@@ -47,10 +48,10 @@ int main() {
       cout << "ERROR:  I don't know what that shape is." << endl;
 
     string moreResponse;
-    cout << "Are you done inserting shapes? (Y/N) "
+    cout << "Are you done inserting shapes? (Y/N) ";
     cin >> moreResponse;
 
-    done = (moreResponse[0] == 'Y') || ((moreResponse[0] == 'y');
+    done = ( (moreResponse[0] == 'Y') || (moreResponse[0] == 'y') );
   } // End while not done
 
   cout << endl << endl;

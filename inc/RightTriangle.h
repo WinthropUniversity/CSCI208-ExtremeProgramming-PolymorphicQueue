@@ -27,7 +27,6 @@ public:
 protected:
   double base; //Base gotten from user
   double height; //Height gotten from user
-
-}
+};
 
 #endif

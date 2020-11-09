@@ -3,17 +3,19 @@
 #include <iostream>
 #include <string>
 #include <Shape.h>
+
 using namespace std;
 
 class Node{
 private:
 	Node *NextPtr;
-	Shape *Shape;
+	Shape *ShapePtr;
+
 public:
 	Node *GetNext();
 	Shape *GetShape();
 
-	Node(Shape *ShapePtr);
+	Node(Shape *InPtr);
 
 	void SetNext(Node *InPtr);
 

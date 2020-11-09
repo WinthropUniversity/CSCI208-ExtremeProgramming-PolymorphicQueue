@@ -6,23 +6,23 @@
 using namespace std;
 
 class Rectangle: public Shape{
-
 public:
-double GetLength();
-double SetLength(double Length);
+  Rectangle();
 
-double GetWidth();
-double SetWidth(double Width);
+  double GetLength();
+  double SetLength(double Length);
 
-double GetArea();
-double GetPerimeter();
+  double GetWidth();
+  double SetWidth(double Width);
 
-void PrintShapeInfo();
-void AskUseForShapePerimeters();
+  double GetArea();
+  double GetPerimeter();
+
+  void PrintShapeInfo();
+  void AskUseForShapePerimeters();
 
 protected:
-double length;
-double width;
-
+  double length;
+  double width;
 };
 #endif

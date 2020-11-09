@@ -8,9 +8,11 @@ class Circle : public Shape {
   public:
 	//Constructor
 	Circle();
+
 	//Accessor Methods
 	double GetRadius();
-	double SetRadius(double radius);
+	void SetRadius(double radius);
+
 	double GetArea();
 	double GetPerimeter();
 

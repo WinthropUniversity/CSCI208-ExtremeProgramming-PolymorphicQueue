@@ -2,20 +2,20 @@
 #include<iostream>
 
 
-Node::Node(Shape *ShapePtr){
+Node::Node(Shape *InPtr){
   this->NextPtr = NULL;
-  Shape = ShapePtr;
+  this->ShapePtr = InPtr;
 
 }
 
-void SetNext(Node *InPtr){
-  NextPtr = InPtr;
+void Node::SetNext(Node *InPtr){
+  this->NextPtr = InPtr;
 }
 
-Node::GetNext(){
+Node *Node::GetNext(){
   return this->NextPtr;
 }
 
-Shape::GetShape(){
-  return this->Shape;
+Shape *Node::GetShape(){
+  return this->ShapePtr;
 }
