@@ -34,7 +34,7 @@ int main(int argc, char **argv) {
   for (int idx=0; idx<shapelist.size(); idx++)
     ShapeList.InsertShape(idx);  
   
-  /* Print the Queue */
+  /* Print all the shape info */
   
   
   // Everything is okay
