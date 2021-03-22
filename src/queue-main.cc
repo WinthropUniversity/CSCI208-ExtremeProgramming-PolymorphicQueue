@@ -22,17 +22,17 @@ int main(int argc, char **argv) {
   /* Create a generic vector of shapes and insert each shape into the queue? */
   Vector<Shape*> ShapeList; 
   
-  ShapeList.push_back(new Circle
-  ShapeList.push_back(new SemiCircle
-  ShapeList.push_back(new Triangle
-  ShapeList.push_back(new EqualateralTriangle
-  ShapeList.push_back(new Rectangle                  
-  ShapeList.push_back(new Square
+  ShapeList.push_back(new Circle(0.0));
+  ShapeList.push_back(new SemiCircle(0.0));
+  ShapeList.push_back(new Triangle(0.0, 0.0));
+  ShapeList.push_back(new EqualateralTriangle(0.0, 0.0));
+  ShapeList.push_back(new Rectangle(0.0, 0.0));                  
+  ShapeList.push_back(new Square(0.0, 0.0));
   
   // --------------------------------------------------------------------------------------------------------------  //
-  
-  /* Store declared shape(s) in Queue */
-  
+  /* Store declared shape(s) in Queue.  Question -- is this operation possible? */
+  for (int idx=0; idx<shapelist.size(); idx++)
+    ShapeList.InsertShape(idx);  
   
   /* Print the Queue */
   
