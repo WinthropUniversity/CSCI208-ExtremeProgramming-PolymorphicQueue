@@ -16,6 +16,12 @@ public:
   Shape* GetShape();
 
   bool IsEmpty();
+
+ int Size();
+
+ void PrintAllShapes();
+
+ void Clear();
   
 
 protected:
