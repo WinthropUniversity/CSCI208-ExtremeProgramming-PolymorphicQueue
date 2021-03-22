@@ -6,7 +6,6 @@
 class EquilateralTriangle : public Triangle {
 	public:
 	 double getPerimeter;
-	 double getArea;
 };
 
 #endif
