@@ -20,6 +20,7 @@ ShapeQueue::~ShapeQueue() {
 
 
 void ShapeQueue::InsertShape(Shape inShapePtr) {
+  // Dr. Wiegand?
   // Create a ShapeNode (allocating ShapeNode)
   // Point the next of the the node @tail pointer to the new ShapeNode
   // Point the tail pointer to the new ShapeNode
@@ -30,6 +31,7 @@ void ShapeQueue::InsertShape(Shape inShapePtr) {
 
 
 Shape ShapeQueue::GetShape() {
+  // Sky?
   // Get the shape in the head node`
   // Change the head to point to its next node`
   // If there was only one node to begin with, also update tail node ptr
@@ -50,6 +52,7 @@ int ShapeQueue::Size() {
 
 
 void ShapeQueue::PrintAllShapes() {
+  // Leo?
   // Start with a pointer variable at head
   // Loop:
   //   Call the shape's PrintInfo() method
@@ -59,7 +62,8 @@ void ShapeQueue::PrintAllShapes() {
 
 
 void ShapeQueue::Clear() {
+  // Tyler?
   // Loop through the list,
   // as long as it isn't empty, get the front node
-  //  We have a method for that:  GetShape()  
+  //  We have a method for that:  GetShape()
 }
