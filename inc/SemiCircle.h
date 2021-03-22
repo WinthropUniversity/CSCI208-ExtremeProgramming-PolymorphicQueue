@@ -7,9 +7,11 @@
 using namespace std;
 
 class SemiCircle : public Circle {
-    private:
+private:
 
-    public:
+public:
+    double GetArea() const;
+    double GetPerimeter() const;
 };
 
 #endif
