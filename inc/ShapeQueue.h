@@ -13,6 +13,11 @@ public:
   // Queue Operations
   void InsertShape(Shape *inShapePtr);
 
+  Shape* GetShape();
+
+  bool IsEmpty();
+  
+
 protected:
   int count_;
   ShapeNode *headPtr;
