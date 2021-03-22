@@ -1,5 +1,13 @@
 #include"Triangle.h"
 #include<iostream>
 
-Triangle::Triangle();
+double Triangle::GetBase(double inBase) 
+{
+    base = inBase;
+}
+
+double Triangle::GetHeight(double inHeight)
+{
+    height = inHeight;
+}
 
