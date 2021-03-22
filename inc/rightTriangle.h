@@ -6,8 +6,7 @@
 
 class RightTriangle : public Triangle {
   public:
-    double GetPerimeter();
-    void SetPerimeter(triangleBase, triangleHeight);
+    double GetPerimeter(triangleBase, triangleHeight);
 }
 
 #endif
