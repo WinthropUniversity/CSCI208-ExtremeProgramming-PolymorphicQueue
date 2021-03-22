@@ -17,7 +17,7 @@ public:
   Circle(double inRadius);
 
   virtual double GetArea() const;
-  double GetPerimeter() const;
+  virtual double GetPerimeter() const;
 
 protected:
   double radius_;
