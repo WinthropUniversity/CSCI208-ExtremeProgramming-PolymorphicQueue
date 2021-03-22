@@ -11,9 +11,9 @@ public:
   ~ShapeQueue();
 
   // Queue Operations
-  void InsertShape(Shape *inShapePtr);
+  void InsertShape(Shape inShapePtr);
 
-  Shape* GetShape();
+  Shape GetShape();
 
   bool IsEmpty();
 
@@ -22,12 +22,12 @@ public:
  void PrintAllShapes();
 
  void Clear();
-  
+
 
 protected:
-  int count_;
-  ShapeNode *headPtr;
-  ShapeNode *tailPtr;
+  int size_;
+  ShapeNode *headPtr_;
+  ShapeNode *tailPtr_;
 };
 
 #endif
