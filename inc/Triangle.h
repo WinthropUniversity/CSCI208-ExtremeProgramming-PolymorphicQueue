@@ -2,9 +2,11 @@
 #define TRIANGLE_
 
 #include<iostream>
+#include<Shape.h>
+
 using namespace std;
 
-class Triangle
+class Triangle : public Shape
 {
    private:
       double base;

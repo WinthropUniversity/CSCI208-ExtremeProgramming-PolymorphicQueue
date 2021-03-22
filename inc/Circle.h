@@ -16,13 +16,11 @@ class Circle : public Shape  {
 public:
   Circle(double inRadius);
 
-  double GetArea() const;
+  virtual double GetArea() const;
   double GetPerimeter() const;
 
 protected:
   double radius_;
-
-  void PrintParamLine() const;
 };
 
 #endif
