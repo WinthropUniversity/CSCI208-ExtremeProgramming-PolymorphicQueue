@@ -2,11 +2,11 @@
 #ifndef RIGHTTRIANGLE_H_
 #define RIGHTTRIANGLE_H_
 
-#include <Triangle.h>
+#include <Triangle.h> // Use base class header file
 
-class RightTriangle : public Triangle {
+class RightTriangle : public Triangle { // RightTriangle inherits from Triangle
   public:
-    double GetPerimeter(triangleBase, triangleHeight);
+    virtual double GetPerimeter(triangleBase, triangleHeight); // Declare method
 }
 
 #endif
