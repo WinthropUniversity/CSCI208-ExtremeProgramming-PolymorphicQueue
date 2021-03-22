@@ -3,7 +3,7 @@
 
 #include "Triangle.h"
 
-class equilateralTriangle : public Triangle {
+class EquilateralTriangle : public Triangle {
 	public:
 	 double getPerimeter;
 	 double getArea;
