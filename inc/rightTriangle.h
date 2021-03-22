@@ -8,4 +8,9 @@
 
 using namespace std;
 
+class rightTriangle : public Triangle {
+  public:
+    double GetPerimeter(triangleBase, triangleHeight);
+}
+
 #endif
