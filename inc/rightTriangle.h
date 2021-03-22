@@ -2,13 +2,9 @@
 #ifndef RIGHTTRIANGLE_H_
 #define RIGHTTRIANGLE_H_
 
-#include <iostream>
-#include <triangle.h> // Including the header file for the base class
-#include <cmath> // Necessary for sqrt() and pow() functions
+#include <Triangle.h>
 
-using namespace std;
-
-class rightTriangle : public Triangle {
+class RightTriangle : public Triangle {
   public:
     double GetPerimeter(triangleBase, triangleHeight);
 }
