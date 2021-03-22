@@ -1,5 +1,5 @@
 # Make this the binary you want to compile!
-TARGET=ShapeQueueMain
+TARGET=queue-main
 
 # Make env vars for the different directories we will use
 OBJDIR=./obj
