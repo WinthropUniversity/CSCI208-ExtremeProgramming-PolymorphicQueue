@@ -35,7 +35,7 @@ int main(int argc, char **argv) {
   Queue.InsertShape(mySquare*);
   
   /* Print all the shape info */
-  cout<<Queue.PrintAllShapes();
+  Queue.PrintAllShapes();
   
   // --------------------------------------------------------------------------------------------------------------  //
   /* Create a generic vector of shapes and insert each shape into the queue via loop?  */
