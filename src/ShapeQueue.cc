@@ -54,9 +54,13 @@ int ShapeQueue::Size() {
 void ShapeQueue::PrintAllShapes() {
   // Leo?
   // Start with a pointer variable at head
+	ShapeNode* temp_ = headPtr_;
   // Loop:
+	for( int i = 0; i < size_; i++) {
   //   Call the shape's PrintInfo() method
+		//PrintInfo();
   //   Update pointer variable to the next ShapeNode
+		temp = //whatever the next Node location is called  
   //   Do this until we hit the end
 }
 
