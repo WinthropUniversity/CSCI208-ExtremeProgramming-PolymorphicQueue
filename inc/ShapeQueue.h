@@ -11,9 +11,9 @@ public:
   ~ShapeQueue();
 
   // Queue Operations
-  void InsertShape(Shape inShapePtr);
+  void InsertShape(Shape *inShapePtr);
 
-  Shape GetShape();
+  Shape *GetShape();
 
   bool IsEmpty();
 
