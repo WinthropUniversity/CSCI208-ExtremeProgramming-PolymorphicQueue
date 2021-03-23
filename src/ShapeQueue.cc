@@ -19,7 +19,7 @@ ShapeQueue::~ShapeQueue() {
 }
 
 
-void ShapeQueue::InsertShape(Shape inShapePtr) {
+void ShapeQueue::InsertShape(Shape *inShapePtr) {
   // Dr. Wiegand?
   // Create a ShapeNode (allocating ShapeNode)
   // Point the next of the the node @tail pointer to the new ShapeNode
@@ -30,7 +30,7 @@ void ShapeQueue::InsertShape(Shape inShapePtr) {
 }
 
 
-Shape ShapeQueue::GetShape() {
+Shape *ShapeQueue::GetShape() {
   // Sky?
   // Get the shape in the head node`
   // Change the head to point to its next node`
