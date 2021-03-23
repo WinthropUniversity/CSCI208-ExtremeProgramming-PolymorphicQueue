@@ -13,6 +13,9 @@ using namespace std;
  * shapes.
  **/
 class Circle : public Shape  {
+private:
+  virtual void CheckRadiusValidity() const;
+
 public:
   Circle(double inRadius);
 
