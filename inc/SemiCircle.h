@@ -10,8 +10,8 @@ class SemiCircle : public Circle {
 private:
 
 public:
-    double GetArea() const;
-    double GetPerimeter() const;
+    virtual double GetArea() const;
+    virtual double GetPerimeter() const;
 };
 
 #endif
