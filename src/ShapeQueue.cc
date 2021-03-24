@@ -19,14 +19,36 @@ ShapeQueue::~ShapeQueue() {
 }
 
 
+/**
+ This method inserts a new node with a shape pointer
+ into the queue at the end.  The size will be
+ incremented by one after the insert.
+   @param inShapePtr The shape pointer to add to the queue
+ **/
 void ShapeQueue::InsertShape(Shape *inShapePtr) {
-  // Dr. Wiegand?
-  // Create a ShapeNode (allocating ShapeNode)
-  // Point the next of the the node @tail pointer to the new ShapeNode
-  // Point the tail pointer to the new ShapeNode
-  // Make sure the new ShapeNode's next points NULL
-  // If the list *was* empty, then also point headPtr to the new ShapeNode
-  // Increment the size_
+  ShapeNode *newNode = new ShapeNode(inShapePtr);
+
+  //case 1:  The list empty
+  if  ( headPtr_ == NULL) && (tailPtr_ == NULL) ) {
+    headPtr_ = newNode;
+    tailPtr_ = newNode;
+  }
+
+  // case 2: There's one item in the list
+  else if ( headPtr_ == tailPtr_) {
+    tailPtr_ = newNode;
+    headPtr_->SetNextNode(newNode);
+  }
+
+  // case 3: Everything else
+  else {
+    ShapeNode *oldTailNode = tailPtr_;
+    oldTailNode->SetNextNode(newNode);
+    tailPtr_ = newNode;
+  }
+
+  // Increment the size of the list by one
+  size_++;
 }
 
 
@@ -38,22 +60,14 @@ Shape *ShapeQueue::GetShape() {
   // Decrement the size_
   // What do we do when the list is empty???
   // Deallocate the ShapeNode
-	
-  /*if (headPtr_ == NULL){
-	  return NULL;//list is empty, return nothing
-  } */
-  //is this necessary?
-  //singular node handle
-  if (headPtr_->GetNextNode() == NULL)//only one node in list if the next node is NULL
+  if (headPtr_ == NULL)
   {
-	tailPtr_ = headPtr_;
-	return headPtr_;
+     tailPtr_ = headPtr_;
+     return tailPtr_;
   }
-	
   ShapeNode* curNode = headPtr_;//get the current headNode
-  //tail pointer points to last element in the list
-  headPtr_ = (tailPtr_ = headPtr_->GetNextNode()); //set the headPtr to the next node in the list
-  size_--;//decremet per comment
+  headPtr_ = headPtr_->GetNextNode(); //set the headPtr to the next node in the list
+  /*delete headPtr_;*/ //delete the current Node??
   return curNode; //return the current Node
 }
 
