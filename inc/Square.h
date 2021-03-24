@@ -1,5 +1,6 @@
 #ifndef Square.h
 #define Square.h
+#include <Rectangle.h>
 
 using namespace std;
 
@@ -8,5 +9,8 @@ class Square : public Rectangle {
     public:
 
         Square(double Base);
-        virtual void Print() const;
+
+    protected:
+
+        virtual void PrintParamLine() const;
 };

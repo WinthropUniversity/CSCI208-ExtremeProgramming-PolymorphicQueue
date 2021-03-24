@@ -8,7 +8,6 @@ Square::Square(double Base) : Rectangle( Base, Base) {
     shapeName_ = "square";
 }
 
-void Square::Print() {
-    cout << GetName() << ": " << endl;
-    cout << "Side Length: " << GetWidth() << endl;
+void Square::PrintParamLine() const {
+    cout << "    Side Length:  " << GetWidth() << endl;
 }
