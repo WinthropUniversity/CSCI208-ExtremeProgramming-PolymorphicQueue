@@ -5,7 +5,7 @@
 using namespace std;
 
 RightTriangle::RightTriangle(double inBase, inHeight) : base(inBase), height(inHeight) { // Constructor for shape name
-  shapeName_ = "RightTriangle"; // Initializes shape name
+  shapeName_ = "Right Triangle"; // RightTriangle knows what shape it is
 }
 
 double RightTriangle::GetPerimeter(triangleBase, triangleHeight) { // Calculates and returns perimeter given a base and height
