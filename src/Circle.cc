@@ -8,12 +8,9 @@
  * Constructor for the circle shape.
  *  @param inRadius The radius with which to set the shape
  **/
-Circle::Circle(double inRadius) : radius_(inRadius) {
+Circle::Circle(double inRadius) {
   shapeName_ = "Circle";
-}
-
-double GetRadius() const {
-  return radius_;
+  radius_ = inRadius;
 }
 
 /**
