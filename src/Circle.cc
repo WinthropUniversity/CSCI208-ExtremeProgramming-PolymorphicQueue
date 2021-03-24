@@ -13,7 +13,7 @@ Circle::Circle(double inRadius) : radius_(inRadius) {
 }
 
 double GetRadius() const {
-
+  return radius_;
 }
 
 /**
@@ -42,5 +42,5 @@ void Circle::PrintParamLine() const {
 }
 
 virtual void CheckRadiusValidity() const {
-  
+
 }
