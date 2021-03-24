@@ -16,5 +16,6 @@ class Triangle : public Shape
       Triangle();
       double GetBase();
       double GetHeight();
-}
+};
 
+#endif
