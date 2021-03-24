@@ -19,11 +19,13 @@ private:
 public:
   Circle(double inRadius);
 
+  double GetRadius() const;
   virtual double GetArea() const;
   virtual double GetPerimeter() const;
 
 protected:
   double radius_;
+  virtual double PrintParamLine() const;
 };
 
 #endif

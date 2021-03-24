@@ -14,9 +14,9 @@ public:
   Rectangle(double inWidth, double inLength);
   double GetWidth();
   double GetLength();
-  virtual double GetArea();
-  virtual double GetPerimeter();
+  virtual double GetArea() const;
+  virtual double GetPerimeter() const;
 
 protected:
-  virtual void PrintParamLine();
+  virtual void PrintParamLine() const;
 };

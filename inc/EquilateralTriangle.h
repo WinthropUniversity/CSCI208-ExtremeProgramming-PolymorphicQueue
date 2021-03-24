@@ -7,7 +7,8 @@ using namespace std;
 
 class EquilateralTriangle : public Triangle {
 	public:
-	 double getPerimeter;
+	  EquilateralTriangle(double inBase, double inHeight);
+	  virtual double GetPerimeter() const;
 };
 
 #endif
