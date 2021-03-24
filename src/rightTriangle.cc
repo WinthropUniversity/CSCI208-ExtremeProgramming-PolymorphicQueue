@@ -4,8 +4,8 @@
 #include <cmath> // Necessary for sqrt() and pow() functions
 using namespace std;
 
-RightTriangle::RightTriangle(double inBase, inHeight) : base(inBase), height(inHeight) {
-  shapeName_ = "Right Triangle";
+RightTriangle::RightTriangle(double inBase, inHeight) : base(inBase), height(inHeight) { // Constructor for shape name
+  shapeName_ = "Right Triangle"; // Initializes shape name
 }
 
 double RightTriangle::GetPerimeter(triangleBase, triangleHeight) { // Calculates and returns perimeter given a base and height
