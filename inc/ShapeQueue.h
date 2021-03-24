@@ -12,17 +12,11 @@ public:
 
   // Queue Operations
   void InsertShape(Shape *inShapePtr);
-
   Shape *GetShape();
-
   bool IsEmpty();
-
- int Size();
-
- void PrintAllShapes();
-
- void Clear();
-
+  int Size();
+  void PrintAllShapes();
+  void Clear();
 
 protected:
   int size_;

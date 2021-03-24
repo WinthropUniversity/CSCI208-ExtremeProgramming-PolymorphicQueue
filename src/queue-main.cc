@@ -16,21 +16,21 @@ using namespace std;
      * menu/user - Driven
   **/
 int main(int argc, char **argv) {
-  
+
   /* Create a ShapeQueue, and populate it */
   ShapeQueue Queue;
-    
+
   /* Pointers to Shapes are created and filled with random values for testing */
   Queue.InsertShape(new Circle(15.4));
   Queue.InsertShape(new SemiCircle(7.5));
   Queue.InsertShape(new RightTriangle(6.0, 4.2));
   Queue.InsertShape(new EqualateralTriangle(2.0, 3.9));
-  Queue.InsertShape(new Rectangle(24.7, 12.8));                  
+  Queue.InsertShape(new Rectangle(24.7, 12.8));
   Queue.InsertShape(new Square(5.0, 8.0));
 
   /* Print all the shape info */
   Queue.PrintAllShapes();
-    
+
   // Everything is okay
   return 0;
 }
