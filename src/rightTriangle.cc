@@ -4,7 +4,7 @@
 #include <cmath> // Necessary for sqrt() and pow() functions
 using namespace std;
 
-RightTriangle::RightTriangle(double inBase, inHeight) : base(inBase), height(inHeight) { // Constructor for shape name
+RightTriangle::RightTriangle(double inBase, inHeight) : Triangle(inBase, inHeight) { // Constructor for shape name
   shapeName_ = "Right Triangle"; // RightTriangle knows what shape it is
 }
 

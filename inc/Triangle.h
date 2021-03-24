@@ -17,7 +17,6 @@ public:
   double GetBase();
   double GetHeight();
   virtual double GetArea() const;
-  string GetName() const;
 
 protected:
   string shapeName_;
