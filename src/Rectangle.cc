@@ -12,3 +12,11 @@ double Rectangle::GetWidth() {
 double Rectangle::GetLength() {
   return Length;
 }
+
+double Rectangle::GetArea() const {
+return Width * Length;
+}
+
+double Rectangle::GetPerimeter() const {
+return 2 * (Width + Length);
+}

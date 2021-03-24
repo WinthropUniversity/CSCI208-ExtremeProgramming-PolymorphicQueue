@@ -20,7 +20,7 @@ public:
   ShapeNode *GetNextNode();
   void SetNextNode(ShapeNode *inNodePtr);
 
-private:
+protected:
   Shape *shapePtr_;
   ShapeNode *nextPtr_;
 };

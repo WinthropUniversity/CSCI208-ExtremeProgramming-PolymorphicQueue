@@ -2,7 +2,11 @@
 #include <iostream>
 using namespace std;
 
-double EquilateralTriangle::getPerimeter(){
+EquilateralTriangle::EquilateralTriangle(double inBase, double inHeight):base(inBase):height(inHeight){
+	  shapeName_ = "EquilateralTriangle";
+}
+
+double EquilateralTriangle::GetPerimeter(){
 	double perimeter;
 	perimeter = GetBase() * 3;
 	return(perimeter);
