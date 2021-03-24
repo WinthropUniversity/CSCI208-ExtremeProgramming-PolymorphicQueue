@@ -7,8 +7,8 @@
 using namespace std;
 
 /**
- * This is an abstract base class for two dimensional
- * shapes.
+ * This is a sub class for two dimensional
+ * circles -> semicircles.
  **/
 class SemiCircle : public Circle {
 private:
