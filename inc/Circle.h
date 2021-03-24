@@ -25,7 +25,7 @@ protected:
   void PrintParamLine() const;
 
 private:
-  virtual void CheckRadiusValidity() const;
+  virtual void CheckRadiusValidity(double radius) const;
 
 };
 

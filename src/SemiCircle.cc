@@ -2,7 +2,7 @@
 
 #define PI 3.141592653589
 
-SemiCircle::SemiCircle(double inRadius) : radius_(inRadius) {
+SemiCircle::SemiCircle(double inRadius) : Circle(inRadius) {
   shapeName_ = "SemiCircle";
 }
 

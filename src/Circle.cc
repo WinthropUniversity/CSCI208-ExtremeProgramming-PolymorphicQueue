@@ -1,6 +1,7 @@
 //this is Circle.cc
 
 #include<Circle.h>
+#include<stdlib.h>
 
 #define PI 3.141592653589
 
@@ -10,6 +11,7 @@
  **/
 Circle::Circle(double inRadius) {
   shapeName_ = "Circle";
+  CheckRadiusValidity(inRadius);
   radius_ = inRadius;
 }
 
@@ -38,6 +40,9 @@ void Circle::PrintParamLine() const {
   cout << "    Radius=" << radius_ << endl;
 }
 
-virtual void CheckRadiusValidity() const {
-
+virtual void CheckRadiusValidity(double radius) const {
+  if (radius <= 0){
+    cerr << "Error Code 42069: Radius must be greater than 0" << endl;
+    exit(42069);
+  }
 }
