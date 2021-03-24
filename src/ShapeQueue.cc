@@ -79,9 +79,8 @@ void ShapeQueue::Clear() {
   // Loop through the list,
   // as long as it isn't empty, get the front node
   //  We have a method for that:  GetShape()
-  while(GetShape() != NULL){
-
-    delete [] headPtr_;
+  for(int i = 0; i < size_; i++){
+    delete [] ;
   }
   size_ = 0;
 }
