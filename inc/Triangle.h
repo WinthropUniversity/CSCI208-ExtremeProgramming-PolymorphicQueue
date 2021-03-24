@@ -17,8 +17,10 @@ public:
   double GetBase();
   double GetHeight();
   virtual double GetArea() const;
+  string GetName() const;
 
 protected:
+  string shapeName_;
   virtual void PrintParamLine() const;
 };
 
