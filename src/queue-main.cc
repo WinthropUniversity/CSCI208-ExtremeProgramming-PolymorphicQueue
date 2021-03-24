@@ -27,6 +27,7 @@ int main(int argc, char **argv) {
   Queue.InsertShape(new EqualateralTriangle(2.0, 3.9));
   Queue.InsertShape(new Rectangle(24.7, 12.8));
   Queue.InsertShape(new Square(5.0, 8.0));
+  Queue.InsertShape(new Hexagon(13.3));
 
   /* Print all the shape info */
   Queue.PrintAllShapes();
