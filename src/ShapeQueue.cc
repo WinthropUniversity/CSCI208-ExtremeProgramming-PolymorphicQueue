@@ -19,14 +19,36 @@ ShapeQueue::~ShapeQueue() {
 }
 
 
+/**
+ This method inserts a new node with a shape pointer
+ into the queue at the end.  The size will be
+ incremented by one after the insert.
+   @param inShapePtr The shape pointer to add to the queue
+ **/
 void ShapeQueue::InsertShape(Shape *inShapePtr) {
-  // Dr. Wiegand?
-  // Create a ShapeNode (allocating ShapeNode)
-  // Point the next of the the node @tail pointer to the new ShapeNode
-  // Point the tail pointer to the new ShapeNode
-  // Make sure the new ShapeNode's next points NULL
-  // If the list *was* empty, then also point headPtr to the new ShapeNode
-  // Increment the size_
+  ShapeNode *newNode = new ShapeNode(inShapePtr);
+
+  //case 1:  The list empty
+  if  ( headPtr_ == NULL) && (tailPtr_ == NULL) ) {
+    headPtr_ = newNode;
+    tailPtr_ = newNode;
+  }
+
+  // case 2: There's one item in the list
+  else if ( headPtr_ == tailPtr_) {
+    tailPtr_ = newNode;
+    headPtr_->SetNextNode(newNode);
+  }
+
+  // case 3: Everything else
+  else {
+    ShapeNode *oldTailNode = tailPtr_;
+    oldTailNode->SetNextNode(newNode);
+    tailPtr_ = newNode;
+  }
+
+  // Increment the size of the list by one
+  size_++;
 }
 
 
