@@ -1,5 +1,5 @@
-#ifndef Rectangle.h
-#define Rectangle.h
+#ifndef RECTANGLE_
+#define RECTANGLE_
 #incude <shape.h>
 
 
@@ -11,6 +11,7 @@ private:
   double Length;
 
 public:
+  Rectangle();
   Rectangle(double inWidth, double inLength);
   double GetWidth();
   double GetLength();
