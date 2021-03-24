@@ -60,7 +60,7 @@ void ShapeQueue::PrintAllShapes() {
   //   Call the shape's PrintInfo() method
 		//PrintInfo();
   //   Update pointer variable to the next ShapeNode
-		temp = //whatever the next Node location is called  
+		temp = //whatever the next Node location is called
   //   Do this until we hit the end
 }
 
@@ -70,4 +70,8 @@ void ShapeQueue::Clear() {
   // Loop through the list,
   // as long as it isn't empty, get the front node
   //  We have a method for that:  GetShape()
+  for(int i = 0; i < size_; i++){
+
+  }
+  size_ = 0;
 }
