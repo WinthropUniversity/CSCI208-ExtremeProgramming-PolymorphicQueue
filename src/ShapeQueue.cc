@@ -88,13 +88,14 @@ void ShapeQueue::PrintAllShapes() {
 	ShapeNode* temp_ = headPtr_;
   // Loop:
 	//for( int i = 0; i < size_; i++) {
-  while (temp_ != NULL)
-  //   Call the shape's PrintInfo() method
-		//PrintInfo();
+  while (temp_ != NULL){
+	temp_->GetShape()->Print();
+  //   Call the shape's Print() method
+
   //   Update pointer variable to the next ShapeNode
-		//temp = //whatever the next Node location is called
-    temp_ = temp_->GetNextNode();
+        temp_ = temp_->GetNextNode();
   //   Do this until we hit the end
+  }
 }
 
 
