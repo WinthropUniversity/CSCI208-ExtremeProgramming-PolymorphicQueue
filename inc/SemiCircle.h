@@ -7,9 +7,18 @@
 using namespace std;
 
 class SemiCircle : public Circle {
-    private:
+private:
 
-    public:
+public:
+    SemiCircle(double inRadius);
+
+    double GetRadius() const;
+    virtual double GetArea() const;
+    virtual double GetPerimeter() const;
+
+protected:
+    double radius_;
+    void PrintParamLine() const;
 };
 
 #endif

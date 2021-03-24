@@ -4,7 +4,10 @@
 #include <cmath> // Necessary for sqrt() and pow() functions
 using namespace std;
 
-double RightTriangle::GetPerimeter(triangleBase, triangleHeight) { // Calculates and returns perimeter given a base and height
-  perimeter = triangleBase + triangleHeight + sqrt(pow(triangleBase,2) + pow(triangleHeight,2)); // Perimeter formula for right triangles
-  return perimeter; // Perimeter is returned when function is called
+RightTriangle::RightTriangle(double inBase, inHeight) : Triangle(inBase, inHeight) { // Constructor for shape name
+  shapeName_ = "Right Triangle"; // RightTriangle knows what shape it is
+}
+
+double RightTriangle::GetPerimeter() const { // Calculates and returns perimeter given a base and height
+  return base + height + sqrt(pow(base, 2) + pow(height, 2)); // Returns perimeter for a right triangle
 }

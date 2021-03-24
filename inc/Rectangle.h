@@ -1,26 +1,23 @@
-#ifndef Rectangle.h
-#define Rectangle.h
+#ifndef RECTANGLE_
+#define RECTANGLE_
 #incude <shape.h>
 
 
 using namespace std;
 
 class Rectangle : public Shape {
-
 private:
-
-double Width;
-
-double Length;
-
+  double Width;
+  double Length;
 
 public:
+  Rectangle();
+  Rectangle(double inWidth, double inLength);
+  double GetWidth();
+  double GetLength();
+  virtual double GetArea() const;
+  virtual double GetPerimeter() const;
 
-double GetWidth();
-double GetLength();
-
-
-
-
-
-}
+protected:
+  virtual void PrintParamLine() const;
+};

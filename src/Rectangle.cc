@@ -4,20 +4,37 @@
 
 using namespace std;
 
-double Rectangle(){
+Rectangle::Rectangle(){
+  Length = 0;
+  Width = 0;
+}
 
-  double Rectangle::GetWidth(){
+Rectangle:: Rectangle(double inWidth, double inLength)
+{
+  Length = inLength;
+  Width = inWidth;
+}
 
-    return Width;
-  }
-
-
-    double Rectangle::GetLength(){
-
-      return Length;
-    }
-
+double Rectangle::GetWidth() {
+  return Width;
+}
 
 
+double Rectangle::GetLength() {
+  return Length;
+}
 
+double Rectangle::GetArea() const {
+return Width * Length;
+}
+
+double Rectangle::GetPerimeter() const {
+return 2 * (Width + Length);
+}
+
+void Rectangle::PrintParamLine() const {
+  cout << "Width = " << GetWidth() << endl;
+  cout << "Length = " << GetLength() << endl;
+  cout << "Area = " << GetArea() << endl;
+  cout << "Perimeter = " << GetPerimeter(); << endl;
 }
