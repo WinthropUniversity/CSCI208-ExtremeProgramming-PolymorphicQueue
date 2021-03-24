@@ -40,7 +40,7 @@ Shape *ShapeQueue::GetShape() {
   // Deallocate the ShapeNode
   if (headPtr_ == NULL)
   {
-     tailPtr_ = headPtr_;  
+     tailPtr_ = headPtr_;
      return tailPtr_;
   }
   ShapeNode* curNode = headPtr_;//get the current headNode
@@ -79,8 +79,9 @@ void ShapeQueue::Clear() {
   // Loop through the list,
   // as long as it isn't empty, get the front node
   //  We have a method for that:  GetShape()
-  for(int i = 0; i < size_; i++){
+  while(GetShape() != NULL){
 
+    delete [] headPtr_;
   }
   size_ = 0;
 }
