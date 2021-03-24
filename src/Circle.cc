@@ -12,15 +12,9 @@ Circle::Circle(double inRadius) : radius_(inRadius) {
   shapeName_ = "Circle";
 }
 
-/**
- * This is called from the external-facing Print()
- * method and simple outputs the parameters specific
- * to this shape.
- **/
-void Circle::PrintParamLine() const {
-  cout << "    Radius=" << radius_ << endl;
-}
+double GetRadius() const {
 
+}
 
 /**
  * Return the area of this circle shape.
@@ -36,4 +30,17 @@ virtual double Circle::GetArea() const {
  **/
 virtual double Circle::GetPerimeter() const {
   return 2.0* radius_ * PI;
+}
+
+/**
+ * This is called from the external-facing Print()
+ * method and simple outputs the parameters specific
+ * to this shape.
+ **/
+void Circle::PrintParamLine() const {
+  cout << "    Radius=" << radius_ << endl;
+}
+
+virtual void CheckRadiusValidity() const {
+  
 }
