@@ -3,6 +3,11 @@
 #include <iostream>
 
 using namespace std;
+Rectangle:: Rectangle(double inWidth, double inLength)
+{
+  Length = inLength;
+  Width = inWidth;
+}
 
 double Rectangle::GetWidth() {
   return Width;
