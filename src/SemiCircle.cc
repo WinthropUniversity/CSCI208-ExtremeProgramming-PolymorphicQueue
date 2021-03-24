@@ -11,5 +11,5 @@ virtual double SemiCircle::GetArea() const {
 }
 
 virtual double SemiCircle::GetPerimeter() const {
-  return (Circle::GetPerimeter() / 2.0) + (2.0 * radius_);
+  return (Circle::GetPerimeter() / 2.0) + (2.0 * GetRadius());
 }

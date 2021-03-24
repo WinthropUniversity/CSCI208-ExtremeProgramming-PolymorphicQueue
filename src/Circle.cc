@@ -15,12 +15,16 @@ Circle::Circle(double inRadius) {
   radius_ = inRadius;
 }
 
+double GetRadius() const {
+  return radius_;
+}
+
 /**
  * Return the area of this circle shape.
  *  @return The area as a double
  **/
 virtual double Circle::GetArea() const {
-  return radius_ * radius_ * PI;
+  return GetRadius() * GetRadius() * PI;
 }
 
 /**
@@ -28,7 +32,7 @@ virtual double Circle::GetArea() const {
  *  @return The perimeter as a double
  **/
 virtual double Circle::GetPerimeter() const {
-  return 2.0* radius_ * PI;
+  return 2.0* GetRadius() * PI;
 }
 
 /**
@@ -37,7 +41,7 @@ virtual double Circle::GetPerimeter() const {
  * to this shape.
  **/
 void Circle::PrintParamLine() const {
-  cout << "    Radius=" << radius_ << endl;
+  cout << "    Radius=" << GetRadius() << endl;
 }
 
 virtual void CheckRadiusValidity(double radius) const {
