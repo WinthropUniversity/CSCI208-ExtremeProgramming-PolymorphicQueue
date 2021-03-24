@@ -4,20 +4,11 @@
 
 using namespace std;
 
-double Rectangle(){
-
-  double Rectangle::GetWidth(){
-
-    return Width;
-  }
+double Rectangle::GetWidth() {
+  return Width;
+}
 
 
-    double Rectangle::GetLength(){
-
-      return Length;
-    }
-
-
-
-
+double Rectangle::GetLength() {
+  return Length;
 }
