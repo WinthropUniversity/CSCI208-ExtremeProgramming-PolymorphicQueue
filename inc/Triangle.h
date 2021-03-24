@@ -19,6 +19,7 @@ public:
   virtual double GetArea() const;
 
 protected:
+  string shapeName_;
   virtual void PrintParamLine() const;
 };
 
