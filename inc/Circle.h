@@ -25,7 +25,7 @@ public:
 
 protected:
   double radius_;
-  virtual double PrintParamLine() const;
+  double PrintParamLine() const;
 };
 
 #endif

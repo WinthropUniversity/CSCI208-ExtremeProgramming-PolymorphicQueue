@@ -26,7 +26,7 @@ void Circle::PrintParamLine() const {
  * Return the area of this circle shape.
  *  @return The area as a double
  **/
-double Circle::GetArea() const {
+virtual double Circle::GetArea() const {
   return radius_ * radius_ * PI;
 }
 
@@ -34,6 +34,6 @@ double Circle::GetArea() const {
  * Return the perimeter of this circle shape.
  *  @return The perimeter as a double
  **/
-double Circle::GetPerimeter() const {
+virtual double Circle::GetPerimeter() const {
   return 2.0* radius_ * PI;
 }
