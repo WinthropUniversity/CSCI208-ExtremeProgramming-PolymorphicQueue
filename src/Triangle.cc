@@ -22,3 +22,8 @@ virtual double GetArea()
   area = ((base / 2) * height);
   return area;
 }
+
+string Triangle::GetName() const
+{
+  return shapeName_;
+}
