@@ -105,7 +105,7 @@ void ShapeQueue::Clear() {
   // as long as it isn't empty, get the front node
   //  We have a method for that:  GetShape()
   ShapeNode* current = headPtr_;
-  while (current == NULL) {
+  while (current != NULL) {
     ShapeNode* temp = current;
     current = current->GetNextNode();
     delete temp;
