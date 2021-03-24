@@ -19,7 +19,7 @@ string Shape::GetName() const {
 void Shape::Print() const {
   cout << "Shape being calculated is a: " << GetName() << endl;
   PrintParamLine();
-  cout << "        The area is: " << GetArea() << endl;
-  cout << "   The perimeter is: " << GetPerimeter() << endl;
+  cout << "      The area is: " << GetArea() << endl;
+  cout << " The perimeter is: " << GetPerimeter() << endl;
   cout << endl;
 }
