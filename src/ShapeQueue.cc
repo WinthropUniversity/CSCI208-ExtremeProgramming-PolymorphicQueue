@@ -60,14 +60,15 @@ Shape *ShapeQueue::GetShape() {
   // Decrement the size_
   // What do we do when the list is empty???
   // Deallocate the ShapeNode
-  if (headPtr_ == NULL)
+  if (headPtr_->GetNextNode() == NULL)
   {
      tailPtr_ = headPtr_;
-     return tailPtr_;
+     return headPtr_;
   }
   ShapeNode* curNode = headPtr_;//get the current headNode
-  headPtr_ = headPtr_->GetNextNode(); //set the headPtr to the next node in the list
+  headPtr_ = (tailPtr_ = headPtr_->GetNextNode()); //set the headPtr to the next node in the list
   /*delete headPtr_;*/ //delete the current Node??
+  size_--;
   return curNode; //return the current Node
 }
 
