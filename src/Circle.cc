@@ -19,7 +19,7 @@ Circle::Circle(double inRadius) {
  * returns the radius of the circle
  * @return the radius as a double
  **/
-double GetRadius() const {
+double Circle::GetRadius() const {
   return radius_;
 }
 
@@ -27,7 +27,7 @@ double GetRadius() const {
  * Return the area of this circle shape.
  *  @return The area as a double
  **/
-virtual double Circle::GetArea() const {
+double Circle::GetArea() const {
   return GetRadius() * GetRadius() * PI;
 }
 
@@ -35,8 +35,8 @@ virtual double Circle::GetArea() const {
  * Return the perimeter of this circle shape.
  *  @return The perimeter as a double
  **/
-virtual double Circle::GetPerimeter() const {
-  return 2.0 * GetRadius() * PI;
+double Circle::GetPerimeter() const {
+   return 2.0 * GetRadius() * PI;
 }
 
 /**
@@ -51,7 +51,7 @@ void Circle::PrintParamLine() const {
 /**
  * Checks if the radius is valid
  **/
-void CheckRadiusValidity(double radius) const {
+void Circle::CheckRadiusValidity(double radius) const {
   if (radius <= 0){
     cerr << "Error Code 42069: Radius must be greater than 0" << endl;
     exit(42069);

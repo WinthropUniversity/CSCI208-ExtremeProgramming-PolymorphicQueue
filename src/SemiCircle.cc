@@ -16,7 +16,7 @@ SemiCircle::SemiCircle(double inRadius) : Circle(inRadius) {
  * Return the area of this semicircle shape.
  *  @return The area as a double
  **/
-virtual double SemiCircle::GetArea() const {
+double SemiCircle::GetArea() const {
   return Circle::GetArea() / 2.0;
 }
 
@@ -24,6 +24,6 @@ virtual double SemiCircle::GetArea() const {
  * Return the perimeter of this semicircle shape.
  *  @return The perimeter as a double
  **/
-virtual double SemiCircle::GetPerimeter() const {
+double SemiCircle::GetPerimeter() const {
   return (Circle::GetPerimeter() / 2.0) + (2.0 * GetRadius());
 }

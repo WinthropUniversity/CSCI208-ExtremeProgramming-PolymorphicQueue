@@ -8,6 +8,6 @@ class RightTriangle : public Triangle { // RightTriangle inherits from Triangle
   public:
     RightTriangle(double inBase, double inHeight); // Constructor
     virtual double GetPerimeter() const; // Declare method
-}
+};
 
 #endif

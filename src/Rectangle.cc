@@ -15,12 +15,12 @@ Rectangle:: Rectangle(double inWidth, double inLength)
   Width = inWidth;
 }
 
-double Rectangle::GetWidth() {
+double Rectangle::GetWidth() const {
   return Width;
 }
 
 
-double Rectangle::GetLength() {
+double Rectangle::GetLength() const {
   return Length;
 }
 
@@ -33,8 +33,8 @@ return 2 * (Width + Length);
 }
 
 void Rectangle::PrintParamLine() const {
-  cout << "Width = " << GetWidth() << endl;
-  cout << "Length = " << GetLength() << endl;
-  cout << "Area = " << GetArea() << endl;
-  cout << "Perimeter = " << GetPerimeter(); << endl;
+  cout << "    Width = " << GetWidth() << endl;
+  cout << "    Length = " << GetLength() << endl;
+  //cout << "Area = " << GetArea() << endl;
+  //cout << "Perimeter = " << GetPerimeter(); << endl;
 }

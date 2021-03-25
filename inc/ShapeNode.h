@@ -25,4 +25,4 @@ protected:
   ShapeNode *nextPtr_;
 };
 
-#define
+#endif

@@ -4,6 +4,8 @@
 **/
 #include <Shape.h>
 
+#include<iostream>
+using namespace std;
 
 /**
   Gets the shape name and returns it as a string

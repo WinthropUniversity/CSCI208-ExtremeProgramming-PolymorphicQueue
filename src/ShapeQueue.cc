@@ -29,7 +29,7 @@ void ShapeQueue::InsertShape(Shape *inShapePtr) {
   ShapeNode *newNode = new ShapeNode(inShapePtr);
 
   //case 1:  The list empty
-  if  ( headPtr_ == NULL) && (tailPtr_ == NULL) ) {
+  if  ( (headPtr_ == NULL) && (tailPtr_ == NULL) ) {
     headPtr_ = newNode;
     tailPtr_ = newNode;
   }
@@ -52,24 +52,38 @@ void ShapeQueue::InsertShape(Shape *inShapePtr) {
 }
 
 
+/**
+ Remove the front item of the list and return that shape.  If the list is
+ empty, return NULL.
+   @return A shape pointer stored in the front of the list.
+ **/
 Shape *ShapeQueue::GetShape() {
-  // Sky?
-  // Get the shape in the head node`
-  // Change the head to point to its next node`
-  // If there was only one node to begin with, also update tail node ptr
-  // Decrement the size_
-  // What do we do when the list is empty???
-  // Deallocate the ShapeNode
-  if (headPtr_->GetNextNode() == NULL)
-  {
-     tailPtr_ = headPtr_;
-     return headPtr_;
+  Shape *returnShapePtr = NULL;
+
+  // If the list is already empty, just return NULL
+  if (headPtr_ == NULL) {
+    returnShapePtr = NULL;
   }
-  ShapeNode* curNode = headPtr_;//get the current headNode
-  headPtr_ = (tailPtr_ = headPtr_->GetNextNode()); //set the headPtr to the next node in the list
-  /*delete headPtr_;*/ //delete the current Node??
-  size_--;
-  return curNode; //return the current Node
+
+  // If there is only one node in the list, remove it.
+  else if (headPtr_ == tailPtr_) {
+    returnShapePtr = headPtr_->GetShape();
+    size_--;
+    delete headPtr_;
+    headPtr_ = NULL;
+    tailPtr_ = NULL;
+  }
+
+  // Otherwise, remove the first node in the list
+  else {
+    returnShapePtr = headPtr_->GetShape();
+    size_--;
+    ShapeNode *temp = headPtr_;
+    headPtr_ = headPtr_->GetNextNode();
+    delete temp;
+  }
+
+  return returnShapePtr; //return the current Node
 }
 
 
@@ -84,34 +98,25 @@ int ShapeQueue::Size() {
 
 
 void ShapeQueue::PrintAllShapes() {
-  // Leo?
-  // Start with a pointer variable at head
 	ShapeNode* temp_ = headPtr_;
-  // Loop:
-	//for( int i = 0; i < size_; i++) {
-  while (temp_ != NULL){
-	temp_->GetShape()->Print();
-  //   Call the shape's Print() method
 
-  //   Update pointer variable to the next ShapeNode
-        temp_ = temp_->GetNextNode();
-  //   Do this until we hit the end
+  while (temp_ != NULL){
+	  temp_->GetShape()->Print();
+    temp_ = temp_->GetNextNode();
   }
 }
 
 
 void ShapeQueue::Clear() {
-  // Tyler?
-  // Loop through the list,
-  // as long as it isn't empty, get the front node
-  //  We have a method for that:  GetShape()
   ShapeNode* current = headPtr_;
   while (current != NULL) {
     ShapeNode* temp = current;
+    Shape *shape = current->GetShape();
     current = current->GetNextNode();
     delete temp;
-
+    delete shape;
   }
+  
   size_ = 0;
   headPtr_ = NULL;
   tailPtr_ = NULL;

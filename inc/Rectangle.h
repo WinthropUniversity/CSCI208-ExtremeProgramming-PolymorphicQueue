@@ -1,6 +1,6 @@
 #ifndef RECTANGLE_
 #define RECTANGLE_
-#incude <shape.h>
+#include <Shape.h>
 
 
 using namespace std;
@@ -13,11 +13,13 @@ private:
 public:
   Rectangle();
   Rectangle(double inWidth, double inLength);
-  double GetWidth();
-  double GetLength();
+  double GetWidth() const;
+  double GetLength() const;
   virtual double GetArea() const;
   virtual double GetPerimeter() const;
 
 protected:
   virtual void PrintParamLine() const;
 };
+
+#endif

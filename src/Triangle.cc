@@ -9,30 +9,26 @@ Triangle::Triangle(double inBase, double inHeight)
     shapeName_ = "Triangle";
 }
 
-double Triangle::GetBase()
+double Triangle::GetBase() const
 {
     return base;
 }
 
-double Triangle::GetHeight()
+double Triangle::GetHeight() const
 {
     return height;
 }
 
-virtual void Triangle::PrintParamLine()
+void Triangle::PrintParamLine() const
 {
-    cout << "The base is " <<  GetBase() <<  endl;
-    cout << "The height is " <<  GetHeight() <<  endl;
+    cout << "    The base is " <<  GetBase() <<  endl;
+    cout << "    The height is " <<  GetHeight() <<  endl;
 }
 
-virtual double Triangle::GetArea() const
+double Triangle::GetArea() const
 {
     double area;
     area = ((base / 2.0) * height);
     return area;
 }
 
-string Triangle::GetName() const
-{
-    return shapeName_;
-}

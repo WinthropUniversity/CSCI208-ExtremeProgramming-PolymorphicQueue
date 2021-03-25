@@ -16,7 +16,7 @@ OBJECTS  := $(SOURCES:$(SRCDIR)/%.cc=$(OBJDIR)/%.o)
 ### --- Environmental Variables --- ###
 CC=g++
 CFLAGS=-I$(INCDIR)  -g
-LDFLAGS=-lncurses -ggdb
+LDFLAGS=-ggdb
 LINKER=g++
 
 # Explanation:

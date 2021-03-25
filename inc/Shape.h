@@ -5,7 +5,7 @@
 #ifndef SHAPE_
 #define SHAPE_
 
-#include <iostream>
+#include<string>
 
 using namespace std;
 

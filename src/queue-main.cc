@@ -5,7 +5,9 @@
 #include<Circle.h>
 #include<Rectangle.h>
 #include<SemiCircle.h>
-#include<EqualateralTriangle.h>
+#include<EquilateralTriangle.h>
+#include<Square.h>
+#include<Hexagon.h>
 
 using namespace std;
 
@@ -24,9 +26,9 @@ int main(int argc, char **argv) {
   Queue.InsertShape(new Circle(15.4));
   Queue.InsertShape(new SemiCircle(7.5));
   Queue.InsertShape(new RightTriangle(6.0, 4.2));
-  Queue.InsertShape(new EqualateralTriangle(2.0, 3.9));
+  Queue.InsertShape(new EquilateralTriangle(2.0, 3.9));
   Queue.InsertShape(new Rectangle(24.7, 12.8));
-  Queue.InsertShape(new Square(5.0, 8.0));
+  Queue.InsertShape(new Square(5.0));
   Queue.InsertShape(new Hexagon(13.3));
 
   /* Print all the shape info */

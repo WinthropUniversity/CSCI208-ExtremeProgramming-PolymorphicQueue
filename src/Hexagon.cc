@@ -8,7 +8,7 @@ Hexagon::Hexagon(double length) : length_(length) {
   shapeName_ = "Hexagon";
 }
 
-void Square::PrintParamLine() const {
+void Hexagon::PrintParamLine() const {
   cout << "           Length: " << length_ << endl;
 }
 
@@ -18,13 +18,13 @@ void Square::PrintParamLine() const {
   square root of three and am inserting it as a
   decimal. Length^2 will also just be length * length
 **/
-double Square::GetArea() const {
+double Hexagon::GetArea() const {
   return ((3 * 1.73205/2) * (length_ * length_));
 }
 
 /**
   Perimeter of a hexagon is length * 6
 **/
-double Square::GetPerimeter() const {
+double Hexagon::GetPerimeter() const {
   return 6.0 * length_;
 }

@@ -23,8 +23,6 @@ public:
 protected:
   double radius_;
   void PrintParamLine() const;
-
-private:
   void CheckRadiusValidity(double radius) const;
 
 };
