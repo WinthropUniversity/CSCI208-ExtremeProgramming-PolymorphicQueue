@@ -22,8 +22,6 @@ public:
 
 protected:
   double radius_;
-  void PrintParamLine() const;
-  void CheckRadiusValidity(double radius) const;
 
 };
 
